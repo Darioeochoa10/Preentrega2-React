@@ -19,7 +19,7 @@ function NavBar() {
         <Navbar.Brand href="#home">Jewelryshop</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="ms-auto gap-3">
+          <Nav className="ms-auto gap-5">
             <Button variant="light">Pendants</Button>
             <Button variant="light">Rings</Button>
             <Button variant="light">Necklaces</Button>
