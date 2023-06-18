@@ -15,7 +15,7 @@ function App() {
   return (
     <>
       <NavBar />
-      <ItemListContainer greetings={"Bienvenidos"} />
+      <ItemListContainer greetings={"Welcome to our Shop"} />
       <ItemCount
         initial={1}
         stock={10}
