@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 import "./App.css";
-import NavBar from "./components/NavBar";
+import NavBar from "./components/NavBar/NavBar";
 {
   /* The following line can be included in your src/index.js or App.js file */
 }
