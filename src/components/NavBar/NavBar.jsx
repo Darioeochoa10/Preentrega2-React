@@ -20,7 +20,7 @@ function NavBar() {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto gap-5">
-            <Button variant="light">Pendants</Button>
+            <Button variant="light">Earrings</Button>
             <Button variant="light">Rings</Button>
             <Button variant="light">Necklaces</Button>
           </Nav>
