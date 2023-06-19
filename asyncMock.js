@@ -9,7 +9,7 @@ const products = [
     description: "Description of earring SUN",
   },
   {
-    ID: "2",
+    id: "2",
     name: "Pendants SUN 24k",
     price: 10377,
     category: "pendants",

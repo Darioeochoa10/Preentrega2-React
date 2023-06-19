@@ -27,7 +27,7 @@ function NavBar() {
               Earrings
             </NavLink>
             <NavLink to="./category/pendants" className="nav-link">
-              Rings
+              Pendants
             </NavLink>
             <NavLink to="./category/necklaces" className="nav-link">
               Necklaces
