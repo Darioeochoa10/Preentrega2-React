@@ -1,7 +1,7 @@
 import "./ItemCount.css";
 import { useState } from "react";
 
-const ItemCount = ({ stock, initial, onAdd }) => {
+const ItemCount = ({ initial, stock, onAdd }) => {
   const [quantity, setQuantity] = useState(initial);
 
   const increment = () => {
@@ -22,7 +22,7 @@ const ItemCount = ({ stock, initial, onAdd }) => {
         <button className="Button" onClick={decrement}>
           -{" "}
         </button>
-        <h2 className="Number"> {quantity} </h2>
+        <h4 className="Number"> {quantity} </h4>
         <button className="Button" onClick={increment}>
           +{" "}
         </button>
