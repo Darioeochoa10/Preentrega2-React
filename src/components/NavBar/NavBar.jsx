@@ -4,6 +4,7 @@ import Navbar from "react-bootstrap/Navbar";
 import Button from "react-bootstrap/Button";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import CartWidget from "../CartWidget/CartWidget";
+import { NavLink, Link } from "react-router-dom";
 import "./NavBar.css";
 
 function NavBar() {
@@ -16,13 +17,21 @@ function NavBar() {
       variant="light"
     >
       <Container>
-        <Navbar.Brand href="#home">Jewelryshop</Navbar.Brand>
+        <Link to="/" className="navbar-brand">
+          Jewelryshop
+        </Link>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto gap-5">
-            <Button variant="light">Earrings</Button>
-            <Button variant="light">Rings</Button>
-            <Button variant="light">Necklaces</Button>
+            <NavLink to="./category/earrings" className="nav-link">
+              Earrings
+            </NavLink>
+            <NavLink to="./category/pendants" className="nav-link">
+              Rings
+            </NavLink>
+            <NavLink to="./category/necklaces" className="nav-link">
+              Necklaces
+            </NavLink>
           </Nav>
 
           <Nav className="ms-auto">
