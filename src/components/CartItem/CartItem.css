@@ -1,0 +1,14 @@
+.CartCardItem {
+  width: 100%;
+}
+
+.container {
+  display: flex;
+
+  justify-content: center;
+}
+
+.CartItemImg {
+  width: 80%;
+  border-radius: 20%;
+}

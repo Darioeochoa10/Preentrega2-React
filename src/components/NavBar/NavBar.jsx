@@ -35,7 +35,7 @@ function NavBar() {
           </Nav>
 
           <Nav className="ms-auto">
-            <CartWidget />
+            <CartWidget className="cartWidget" />
           </Nav>
         </Navbar.Collapse>
       </Container>
