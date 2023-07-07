@@ -3,20 +3,31 @@ import { useState, useEffect } from "react";
 
 import ItemDetail from "../ItemDetail/ItemDetail";
 import { useParams } from "react-router-dom";
-import { getProductById } from "../../../asyncMock";
+//import { getProductById } from "../../../asyncMock";
+import { getDoc, doc } from "firebase/firestore";
+import { db } from "../../services/firebase/firebaseConfig";
 
 const ItemDetailContainer = () => {
   const [product, setProduct] = useState(null);
+  const [loading, setLoading] = useState(true);
   const { itemId } = useParams();
 
   useEffect(() => {
-    getProductById(itemId)
+    setLoading(true);
+    const docRef = doc(db, "products", itemId);
+    getDoc(docRef)
       .then((response) => {
-        setProduct(response);
+        const data = response.data();
+        const product = { id: response.id, ...data };
+        setProduct(product);
       })
       .catch((error) => {
         console.error(error);
+      })
+      .finally(() => {
+        setLoading(false);
       });
+    console.log(product);
   }, [itemId]);
 
   return (
