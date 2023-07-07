@@ -2,4 +2,14 @@
   width: 20px; /* Ajusta el ancho deseado */
   height: auto; /* El valor 'auto' mantiene la proporción de aspecto */
   margin: 10px;
+  color: white;
+}
+
+.CartWidget {
+  background-color: rgb(255, 81, 0);
+  display: inline-block;
+  padding: 3px;
+  border-radius: 10%;
+  color: white;
+  text-decoration: none;
 }
