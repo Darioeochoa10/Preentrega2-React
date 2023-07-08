@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "./CheckoutForm.css";
 
 const CheckoutForm = ({ onConfirm }) => {
   const [name, setName] = useState("");
@@ -18,30 +19,42 @@ const CheckoutForm = ({ onConfirm }) => {
   };
 
   return (
-    <div className="Container">
+    <div className="checkout-form">
       <form onSubmit={handleConfirm} className="Form">
-        <label className="Label">
-          Name
-          <input
-            className="Input"
-            type="text"
-            value={name}
-            onChange={({ target }) => setName(target.value)}
-          />
-          <input
-            className="Input"
-            type="text"
-            value={phone}
-            onChange={({ target }) => setPhone(target.value)}
-          />
-          <input
-            className="Input"
-            type="text"
-            value={email}
-            onChange={({ target }) => setEmail(target.value)}
-          />
-        </label>
-        <div className="Label">
+        <div className="Form-row">
+          <label className="Label">
+            Name
+            <input
+              className="Input"
+              type="text"
+              value={name}
+              onChange={({ target }) => setName(target.value)}
+            />
+          </label>
+        </div>
+        <div className="Form-row">
+          <label className="Label">
+            Phone
+            <input
+              className="Input"
+              type="text"
+              value={phone}
+              onChange={({ target }) => setPhone(target.value)}
+            />
+          </label>
+        </div>
+        <div className="Form-row">
+          <label className="Label">
+            Email
+            <input
+              className="Input"
+              type="text"
+              value={email}
+              onChange={({ target }) => setEmail(target.value)}
+            />
+          </label>
+        </div>
+        <div className="Form-row">
           <button type="submit" className="Button">
             Create Order
           </button>

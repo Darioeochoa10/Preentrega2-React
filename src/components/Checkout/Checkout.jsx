@@ -49,7 +49,7 @@ const Checkout = () => {
 
   return (
     <div className="Container">
-      <h1>Finish your Buy</h1>
+      <h1 className="text-center">Finish your Buy</h1>
       <CheckoutForm onConfirm={handleConfirm} />
     </div>
   );
