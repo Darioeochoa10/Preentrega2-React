@@ -11,8 +11,8 @@ const Item = ({ id, name, img, price, stock }) => {
         <img src={img} alt={name} className="ItemImg" />
       </picture>
       <section>
-        <p className="Info">Precio: ${price}</p>
-        <p className="Info">Stock Disponible: {stock}</p>
+        <p className="Info">Price: ${price}</p>
+        <p className="Info">Stock Available: {stock}</p>
       </section>
       <footer className="ItemFooter">
         <Link to={`/item/${id}`} className="Option">

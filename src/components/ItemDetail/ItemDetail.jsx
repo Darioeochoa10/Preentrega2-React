@@ -27,14 +27,14 @@ const ItemDetail = ({ id, name, img, category, description, price, stock }) => {
         <img src={img} alt={name} className="ItemImg" />
       </picture>
       <section>
-        <p className="Info">Categoria: {category}</p>
+        <p className="Info">Category: {category}</p>
         <p className="Info">Description: {description}</p>
         <p className="Info">Price: {price}</p>
       </section>
       <footer className="ItemFooter">
         {quantityAdded > 0 ? (
           <Link to="/cart" className="Option">
-            Terminar compra
+            Buy
           </Link>
         ) : (
           <ItemCount initial={1} stock={stock} onAdd={handleOnAdd} />
