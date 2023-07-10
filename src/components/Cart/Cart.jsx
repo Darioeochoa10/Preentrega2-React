@@ -25,10 +25,10 @@ const Cart = () => {
       ))}
       <h3>Total: ${total}</h3>
       <div className="btnCartContainer">
-        <button onClick={() => clearCart()} className="Button btn btn-primary">
+        <button onClick={() => clearCart()} className="btncart">
           Clean Cart
         </button>
-        <Link to="/" className="Button btn btn-primary">
+        <Link to="/" className="btncart">
           Back to Products
         </Link>
       </div>

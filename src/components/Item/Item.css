@@ -1,3 +1,11 @@
+.Itemcontainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-left: 50px;
+}
+
 .CardItem {
   display: flex;
   flex-direction: column;
