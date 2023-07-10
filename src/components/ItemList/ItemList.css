@@ -8,3 +8,9 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 50px;
 }
+
+@media (max-width: 767px) {
+  .ListGroup {
+    grid-template-columns: 1fr;
+  }
+}
